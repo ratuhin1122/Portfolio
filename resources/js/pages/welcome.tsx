@@ -1,17 +1,11 @@
-import { dashboard, login, register } from '@/routes';
-import { type SharedData } from '@/types';
-import { Head, Link, usePage } from '@inertiajs/react';
-import  Hero  from '@/pages/Hero/Hero';
 import About from '@/pages/About/About';
 import Footer from '@/pages/Footer/Footer';
+import Hero from '@/pages/Hero/Hero';
 import Navbar from '@/pages/Navbar/Navbar';
+import ChannelHighlights from './Chennel/ChannelHighlights';
 
-export default function Welcome({
-    canRegister = true,
-}: {
-    canRegister?: boolean;
-}) {
-    const { auth } = usePage<SharedData>().props;
+export default function Welcome(props: WelcomeProps) {
+    console.log(props);
 
     return (
         <>
@@ -23,11 +17,11 @@ export default function Welcome({
                 />
             </Head> */}
 
-                <Navbar/> 
-                <Hero/>
-                <About/>
-                <Footer/>
-            
+            <Navbar />
+            <Hero />
+            <ChannelHighlights />
+            <About />
+            <Footer />
         </>
     );
 }
