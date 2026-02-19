@@ -69,7 +69,7 @@ const About: React.FC = () => {
             variants={itemVariants}
           >
             <motion.p className="text-lg text-gray-300 leading-relaxed" variants={itemVariants}>
-              Hello! I'm <span className="text-cyan-400 font-semibold">Hasanuzzaman Shawon</span>, a dedicated YouTube Content Creator. From a clean mix in FL Studio to the final cut in Premiere Pro, I handle every step of the content pipeline. My goal is to deliver excellence that resonates with viewers.
+              Hello! I'm <span className="text-cyan-400 font-semibold">Hasanuzzaman Shawon</span>, a dedicated YouTube Music Composer. From a clean mix in FL Studio to the final cut in Premiere Pro, I handle every step of the content pipeline. My goal is to deliver excellence that resonates with viewers.
             </motion.p>
             
             <motion.h2 className="text-2xl font-semibold text-cyan-400 pt-4" variants={itemVariants}>

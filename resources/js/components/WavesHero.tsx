@@ -203,10 +203,10 @@ const WavesHero = () => {
           {/* End Photo Section */}
 
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-            Hi, I'm <br/> Hasanuzzaman Shawon <span className="text-cyan-400 ">Content </span> Creator
+            Hi, I'm <br/> Hasanuzzaman Shawon <span className="text-cyan-400 ">Music </span> Composer
           </h1>
           <p className="mx-auto max-w-2xl text-gray-300 sm:text-xl">
-            I build modern, performant, and delightful web applications using Next.js, React, and Tailwind CSS. Let's create something impactful.
+            I create engaging and high-quality content for YouTube, focusing on music and entertainment. My goal is to entertain and inspire my audience with creative and original content.
           </p>
           
           <div className="flex justify-center space-x-4 cursor-pointer">
