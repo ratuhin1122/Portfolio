@@ -6,10 +6,12 @@ import { useScrollDirection } from '@/components/useScrollDirection'; // Import 
 import { Menu, X } from 'lucide-react'; // Example icons for mobile menu
 import  BorderAnimationButton  from "@/components/BorderAnimationButton";
 
+
 const navItems = [
-  { name: 'Home', href: '/' },
-  { name: 'About', href: '/' },
-  { name: 'Projects', href: '/' },
+  { name: 'Home', href: '/#home' },
+  { name: 'About', href: '/#about' },
+  { name: 'Videos', href: '/#videos' },
+  { name: 'Lyrics', href: '/lyrics' },
   
 ];
 
@@ -26,11 +28,15 @@ const Navbar = () => {
     <header className={`fixed top-0 left-0 right-0 z-50 p-4 ${headerClasses}`}>
       <nav className="max-w-7xl mx-auto flex items-center  justify-between">
         {/* Logo/Branding */}
-        <div className="flex-shrink-0">
-          <Link href="/" className="text-2xl font-bold text-white ">
-            Portfolio Logo
-          </Link>
-        </div>
+        <Link href="/" className="text-2xl font-bold text-white group">
+        <img 
+            src="/images/Shawon.png" 
+            alt="Shawon Logo" 
+            className="h-10 w-10 rounded-full 
+                       transition-transform duration-300 group-hover:scale-110 
+                       ring-2 ring-indigo-400 ring-offset-2 ring-offset-transparent" 
+        />
+    </Link>
 
         {/* 1. Desktop Navigation - Centered Links */}
         <ul className="hidden md:flex flex-1  justify-center space-x-8">
@@ -49,7 +55,7 @@ const Navbar = () => {
         {/* Desktop CTA Button */}
         <div className="hidden md:block">
           <Link
-            href="/contact"
+            href="/#footer"
             
             >
               <BorderAnimationButton text="Contact" />
@@ -70,7 +76,7 @@ const Navbar = () => {
 
       {/* 3. Mobile Menu Overlay */}
       <div
-        className={`md:hidden absolute top-full left-0 right-0 ${scrolled ? 'bg-white/90 backdrop-blur-sm' : 'bg-white/5'} transition-all duration-300 transform ${
+        className={`md:hidden absolute top-full left-0 right-0 ${scrolled ? 'bg-black/50 backdrop-blur-sm' : 'bg-white/5'} transition-all duration-300 transform ${
           isMenuOpen ? 'translate-y-0 opacity-100 p-4 border-t' : '-translate-y-4 opacity-0 h-0 overflow-hidden'
         }`}
       >
@@ -88,7 +94,7 @@ const Navbar = () => {
           ))}
           <li>
             <Link
-              href="/contact"
+              href="/#footer"
               onClick={() => setIsMenuOpen(false)}
               className="block text-lg font-medium text-white hover:text-indigo-600"
               >

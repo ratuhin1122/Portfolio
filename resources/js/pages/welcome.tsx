@@ -5,7 +5,7 @@ import Navbar from '@/pages/Navbar/Navbar';
 import ChannelHighlights from './Chennel/ChannelHighlights';
 
 export default function Welcome(props: WelcomeProps) {
-    console.log(props);
+    console.log(props, props.mostViewed);
 
     return (
         <>
@@ -18,9 +18,15 @@ export default function Welcome(props: WelcomeProps) {
             </Head> */}
 
             <Navbar />
-            <Hero />
-            <ChannelHighlights />
-            <About />
+            <section id="home">
+                <Hero />
+            </section>
+            <section id="about">
+                <About />
+            </section>
+            <section id="videos">
+                <ChannelHighlights />
+            </section>
             <Footer />
         </>
     );

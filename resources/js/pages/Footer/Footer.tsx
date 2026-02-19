@@ -16,7 +16,7 @@ import { TextHoverEffect }from "@/components/TextHoverEffects";
 
 function HoverFooter() {
   return (
-    <footer className="bg-[#0F0F11]/10 relative h-fit rounded-3xl overflow-hidden m-8">
+    <footer id="footer" className="bg-[#0F0F11]/10 relative h-fit rounded-3xl overflow-hidden m-0 lg:m-8">
       <div className="max-w-7xl mx-auto p-14 z-40 relative">
         {/* Main grid for the footer content */}
 
@@ -89,11 +89,7 @@ function HoverFooter() {
                 </a>
               </li>
 
-              <li>
-              <a href="#" className="hover:text-[#3ca2fa] transition-colors">
-                  Support
-                </a>
-              </li>
+           
             </ul>
           </div>
 
@@ -112,7 +108,7 @@ function HoverFooter() {
                   href="mailto:hello@Pollen.com"
                   className="hover:text-[#3ca2fa] transition-colors"
                 >
-                  hello@nurui.com
+                  shawon.ah715@gmail.com
                 </a>
               </li>
 
@@ -123,7 +119,7 @@ function HoverFooter() {
                   href="tel:+918637373116"
                   className="hover:text-[#3ca2fa] transition-colors"
                 >
-                  +91 86373 73116
+                  +880 1749888467
                 </a>
               </li>
 
@@ -197,7 +193,7 @@ function HoverFooter() {
         </div>
       </div>
 
-      <div className="lg:flex hidden h-[30rem] -mt-32 -mb-36">
+      <div className="lg:flex px-4 lg:px-0 h-[20rem] lg:h-[30rem] -mt-20 lg:-mt-32 -mb-20 lg:-mb-36 overflow-hidden">
         <TextHoverEffect text="Shawon" className="z-50"  />
       </div>
 

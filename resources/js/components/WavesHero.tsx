@@ -209,7 +209,9 @@ const WavesHero = () => {
             I build modern, performant, and delightful web applications using Next.js, React, and Tailwind CSS. Let's create something impactful.
           </p>
           
-          <div className="flex justify-center space-x-4">
+          <div className="flex justify-center space-x-4 cursor-pointer">
+            <a href="https://www.youtube.com/@ShawonProduction">
+            
             
             {/* FIX: Use BorderAnimationButton as a wrapper to contain both text and icon */}
             <BorderAnimationButton>
@@ -217,7 +219,7 @@ const WavesHero = () => {
               <ArrowRight className="ml-2 h-5 w-5" />
             </BorderAnimationButton>
             
-           
+           </a>
             
           </div>
         </motion.div>

@@ -15,8 +15,8 @@ class HomeController extends Controller
     public function index()
     {
         $channelHighlights = $this->youTube->channelHighlights([
-            'latestMax' => 4,
-            'mostViewedMax' => 4
+            'latestMax' => 8,
+            'mostViewedMax' => 8
         ]);
 
         return Inertia::render('welcome', [
